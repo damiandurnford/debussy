@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CoF.css';
 import InStave from './In-Stave.tsx';
-import { useLlama } from './LlamaContext.tsx';
+
 
 const enharmonicKeys: Record<string, string> = {
 
@@ -65,7 +65,7 @@ type CoFProps = {
 };
 
 export default function CoF({ onChordSelect }: CoFProps) {
-  const { setLlamaInsight } = useLlama();
+
   const [selectedChordName, setSelectedChordName] = useState('C');
   const [spinDeg, setSpinDeg] = useState(0);
   const [minorSpinDeg, setMinorSpinDeg] = useState(0);

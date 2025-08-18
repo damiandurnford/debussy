@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useLlama } from './LlamaContext.tsx';
 import './Chart.css';
 import InStave from './In-Stave.tsx';
 
@@ -265,7 +264,7 @@ interface ModesProps {
 const Modes: React.FC<ModesProps> = ({ onChordSelect }) => {
   const [rootNote, setRootNote] = useState('C');
   const [showSevenths, setShowSevenths] = useState(false);
-  const { setSelectedMode: setGlobalSelectedMode, setLlamaInsight } = useLlama();
+
 
   const modeList = [
     { label: 'Ionian', offset: 0 },

@@ -8,7 +8,7 @@ import Progressions from './components/Progressions.tsx';
 import Modes from './components/Modes.tsx';
 import ToolButton from './components/ToolButton.tsx';
 import ThemeToggle from './components/ThemeToggle.tsx';
-import { LlamaProvider } from './components/LlamaContext.tsx';
+
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <LlamaProvider>
+
       <div className="App">
 
         <div className="tool-buttons">
@@ -81,7 +81,7 @@ function App() {
   <ThemeToggle />
 
       </div>
-    </LlamaProvider>
+
   );
 };
 
