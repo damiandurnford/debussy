@@ -1,12 +1,12 @@
 backend:
     functions:
-        - entry: index.js
+        - entry: dist/index.js
           handler: handler
           name: function-express
           path: .
           type: express
     language:
-        name: js
+        name: ts
         runtime: nodejs20.x
     path: .
     scripts:
