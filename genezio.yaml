@@ -1,8 +1,7 @@
 name: debussy
 region: eu-central-1
 yamlVersion: 2
-projectType: frontend-react
 frontend:
     path: .
-    buildCommand: npm run build
     publish: build
+    subdomain: debussy
