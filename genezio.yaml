@@ -17,5 +17,5 @@ backend:
             - npm install
             - npm run build
 name: debussy
-region: eu-west-1
+region: us-east-1
 yamlVersion: 2
