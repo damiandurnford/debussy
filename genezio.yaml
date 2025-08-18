@@ -1,6 +1,6 @@
 backend:
     functions:
-        - entry: index.js
+        - entry: dist/index.js
           handler: handler
           name: function-express
           path: .
@@ -10,7 +10,10 @@ backend:
         runtime: nodejs20.x
     path: .
     scripts:
-        pre-deploy:
+        deploy:
+            - npm install
+            - npm run build
+        local:
             - npm install
             - npm run build
 name: debussy
