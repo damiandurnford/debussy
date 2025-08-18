@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+select,
+div,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h2 {
+  color: coral;
+  font-size: x-large;
+  text-align: center;
+
+}
+
+h4 {
+  color: seagreen;
+  font-size: large;
+  text-align: center;
+
+}
+
+h5 {
+  font-size: large;
+  padding: 3px;
+  margin: 3px 0;
+  background-color: crimson;
+  color: white;
+
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #007bff;
+  /* Example primary color */
+}
+
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #66b3ff;
+  /* Example dark mode primary color */
+}
+
+button {
+  cursor: pointer;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  position: relative;
+}
+
+/* Title and Subtitle */
+.title {
+  text-align: center;
+
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+
+  margin: 0 0 12px 0;
+
+}
+
+/* Tool Buttons */
+.tool-buttons {
+
+  display: flex;
+  justify-content: center;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  transition-duration: 0.4s;
+  border-bottom: 1px solid var(--text-color);
+  margin: -2px 0;
+}
+
+.tool-buttons button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: none;
+  padding: 8px;
+  background-color: #fff;
+  color: crimson;
+
+  border-radius: 12px 12px 0 0;
+  font-weight: bold;
+  margin: -1px 2px;
+  border: 1px solid #000;
+  font-size: x-large;
+}
+
+.tool-buttons button:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  /* Default to row for landscape */
+}
+
+.pane-1,
+.pane-2 {
+  flex: 1;
+  padding: 10px;
+
+}
+
+
+
+.pane-2 {
+  background-color: crimson;
+}
+
+@media (max-width: 1100px) {
+
+
+  .main-content {
+    flex-direction: column;
+    /* Switch to column for portrait */
+    padding-bottom: 200px;
+    /* prevents overlap with fixed pane */
+
+  }
+
+  .pane-1 {
+    margin-bottom: 200px;
+    /* Match or exceed height of .pane-2 */
+  }
+
+  .pane-2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    border-top: 1px solid #444;
+    z-index: 1000;
+    padding: 10px;
+  }
+
+
+  .pane-2 {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background-color: crimson;
+    border-top: 1px solid #444;
+    z-index: 1000;
+    padding: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+
+  }
+
+  .tool-buttons button {
+    font-size: 18px;
+  }
+
+
+}
+
+.nav-button {
+  background: white;
+  color: crimson;
+  border: none;
+  padding: 10px;
+
+}
+
+.nav-button:hover {
+  background: crimson;
+  color: white;
+}
+
+.nav-button.selected {
+  background: crimson;
+  color: white;
+}
+
+.tool-button.selected {
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+}
+
+.user-login button {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  width: 35px;
+  height: 35px;
+  padding: 0 0 1px 0;
+  font-size: 20px;
+  border-radius: 50%;
+  
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  border: none;
+
+}
+
+.about-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* dark semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.about-content {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.about-content button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.about-content button:hover {
+  background-color: #444;
+}
+
+.pane-2 {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.title-row {
+    background-color: crimson;
+    width: 100%;
+    text-align: right;
+    height: 45px;
+    position: fixed;
+    bottom: 0px;
+
+}
+
+#menuBtn {
+    font-size: 20px;
+    border: none;
+    position: fixed;
+    bottom: 13px;
+    left: 21px;
+    background-color: crimson;
+}
+
+#menuBtn:hover {
+    transform: rotate(20deg) scale(1.2);
+}
+
+#darkModeBtn {
+    font-size: 20px;
+    border: none;
+    position: fixed;
+    bottom: 13px;
+    right: 21px;
+    background-color: crimson;
+}
+#darkModeBtn:hover {
+    transform: rotate(20deg) scale(1.2);
+}
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: lightgoldenrodyellow;
+    text-align: center;
+font-weight: bold;
+}
+
+.version {
+    font-size: 16px;
+    color: black;
+    letter-spacing: 0px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: crimson;
+}
+
+.version:hover {
+    color: lightgoldenrodyellow;
+}

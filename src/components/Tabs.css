@@ -1,0 +1,240 @@
+.tabs-container {
+  margin: 5px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.tool-title {
+  text-align: left;
+  font-size: x-large;
+  margin-bottom: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.songSelect {
+  margin: 0 20px 10px 20px;
+  padding: 1px 15px;
+  font-size: medium;
+  color: black;
+  border-radius: 12px;
+  width: 90%;
+  border: 1px solid var(--text-color);
+  background-color: rgb(230, 230, 230);
+}
+
+.song-title {
+  margin-left: 10px;
+  text-align: left;
+  font-size: x-large;
+  float: left;
+  color: orange;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.song-composer {
+  margin-right: 10px;
+  text-align: right;
+  font-size: x-large;
+  float: right;
+  color: teal;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.song-details {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  clear: both;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border-radius: 12px;
+  background-color: grey;
+
+}
+
+.song-details>div {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  margin: 5px;
+  padding: 5px 0;
+  border-radius: 12px;
+}
+
+.song-details span {
+  font-size: x-small;
+}
+
+.song-details span:after {
+  content: "\a";
+  white-space: pre;
+}
+
+.song-details select {
+  font-size: Medium;
+  color: black;
+  border-radius: 12px;
+  padding: 1px 15px;
+  font-size: small;
+}
+
+.song-details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+.inline-chord {
+  position: relative;
+  bottom: 20px;
+  border-radius: 12px;
+  margin: 20px 0px 5px 0px;
+  padding: 3px 6px;
+  width: 0;
+  font-size: 18px;
+  border: 1px solid var(--text-color);
+}
+
+.inline-chord:hover,
+.inline-chord:focus,
+.inline-chord:active {
+  background-color: orange;
+  color: black
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.welcome-user {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: small;
+}
+
+
+
+.section-header {
+  text-align: center;
+  background-color: teal;
+  color: white;
+  padding: 1px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 10px;
+margin-top: 5px;
+}
+
+.break-lyric {
+  width: 90%;
+}
+
+
+.chordBut {
+  min-width: 35px;
+  padding: 4px;
+  font-size: 18px;
+  border-radius: 12px;
+  border-color: black;
+  color: blue;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ margin: 7px 3px 3px -2px;
+}
+
+.lyric {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
+
+
+.lyric2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+
+}
+
+.chordBut2 {
+  min-width: 35px;
+  padding: 4px;
+  font-size: 18px;
+  border-radius: 12px;
+  border-color: black;
+  color: blue;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ margin: 7px 3px 3px 4px;
+}
+
+
+
+.chordBut:hover,
+.chordBut:active,
+.chordBut:focus,
+.chordBut2:hover,
+.chordBut2:active,
+.chordBut2:focus {
+  background-color: orange;
+  color: black;
+}
+
+.inLineSwitch {
+  text-align: center;
+  padding: 10px;
+
+}
+
+.autoScroll {
+  font-size: large;
+  text-align: center;
+transform: 'translateX(-50%)';
+background-color: crimson;
+}
+
+.autoScroll button {
+  font-size: 18px;
+  padding: 2px 5px;
+  margin: 7px;
+border-radius: 12px;
+min-width: 45px;
+}
+
+.songBody::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+
+
+.inlineChordLyric {
+  display: inline-block;
+  text-align: center;
+  min-width: 35px;
+  margin: 0 3px;
+  vertical-align: bottom;
+}
+
+.inlineChordLyric .chordBut {
+  display: block;
+  margin-bottom: -4px;
+}
+
+.inlineChordLyric .lyric {
+  display: block;
+}
