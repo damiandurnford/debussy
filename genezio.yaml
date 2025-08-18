@@ -1,9 +1,9 @@
 backend:
     functions:
-        - entry: dist/index.js
+        - entry: index.js
           handler: handler
           name: function-express
-          path: .
+          path: dist
           type: httpServer
     language:
         name: ts
