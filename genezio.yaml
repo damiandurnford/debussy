@@ -1,9 +1,9 @@
 backend:
     functions:
-        - entry: index.tsx
+        - entry: index.js
           handler: handler
           name: function-express
-          path: .
+          path: ./dist
           type: httpServer
     language:
         name: js
