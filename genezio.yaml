@@ -4,7 +4,7 @@ backend:
           handler: handler
           name: function-express
           path: .
-          type: express
+          type: httpServer
     language:
         name: ts
         runtime: nodejs20.x
