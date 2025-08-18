@@ -309,7 +309,7 @@ const Modes: React.FC<ModesProps> = ({ onChordSelect }) => {
 
   const handleModeSelect = (mode: string) => {
     setSelectedMode(mode);
-    setGlobalSelectedMode(mode);
+    
     onChordSelect(rootNote); // Refresh chords with the new mode
     // chords will update via useMemo below
   };
@@ -514,13 +514,7 @@ const Modes: React.FC<ModesProps> = ({ onChordSelect }) => {
                   className='modeChord'
                   key={index}
                   onClick={() => {
-                    setLlamaInsight({
-                      type: 'borrowed',
-                      chord: chord,
-                      fromMode: mode,
-                      inKey: rootNote,
-                      showSevenths: showSevenths
-                    });
+                   
                     onChordSelect(chord);
                   }}
                 >

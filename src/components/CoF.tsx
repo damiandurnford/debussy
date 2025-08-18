@@ -447,7 +447,7 @@ export default function CoF({ onChordSelect }: CoFProps) {
                   <button
                     onClick={() => {
                       onChordSelect(dominant);
-                      setLlamaInsight({ type: 'tritone', chord: dominant, resolvesTo: resolution });
+                      ;
                     }}
                   >
                     {dominant}
@@ -456,7 +456,7 @@ export default function CoF({ onChordSelect }: CoFProps) {
                   <button
                     onClick={() => {
                       onChordSelect(tritoneSub);
-                      setLlamaInsight({ type: 'tritone', chord: tritoneSub, resolvesTo: resolution });
+                      
                     }}
                   >
                     {tritoneSub}
@@ -465,7 +465,7 @@ export default function CoF({ onChordSelect }: CoFProps) {
                   <button
                     onClick={() => {
                       onChordSelect(resolution);
-                      setLlamaInsight(null); 
+                       
                     }}
                   >
                     {resolution}
@@ -540,13 +540,7 @@ export default function CoF({ onChordSelect }: CoFProps) {
                   <button
                     onClick={() => {
                       onChordSelect(entry.chord);
-                      setLlamaInsight({
-                        type: 'secondary',
-                        chord: entry.chord,
-                        resolvesTo: entry.target,
-                        roman: entry.label,
-                        target: entry.target
-                      });
+                      
                     }}
                   >
                     {entry.chord}
@@ -555,7 +549,7 @@ export default function CoF({ onChordSelect }: CoFProps) {
                   <button
                     onClick={() => {
                       onChordSelect(entry.target);
-                      setLlamaInsight(null); 
+                      
                     }}
                   >
                     {entry.target}
