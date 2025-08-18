@@ -5,3 +5,4 @@ projectType: frontend-react
 frontend:
     path: .
     buildCommand: npm run build
+    publish: build
