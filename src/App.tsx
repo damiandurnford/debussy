@@ -35,7 +35,7 @@ function App() {
   return (
     <LlamaProvider>
       <div className="App">
-        <ThemeToggle />
+
         <div className="tool-buttons">
           <ToolButton
             label="📝 Tabs"
@@ -73,10 +73,12 @@ function App() {
         </div>
 
   <div className="title-row">
-    <div className="title">De♭ussy <button className="version">(v0.91)</button></div>
+    <div className="title">De♭ussy <button className="version">(v0.92)</button></div>
    <button id="menuBtn">🎶</button>
     <button id="darkModeBtn">🌙</button>
   </div>
+
+  <ThemeToggle />
 
       </div>
     </LlamaProvider>

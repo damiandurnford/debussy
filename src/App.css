@@ -4,6 +4,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
   color: var(--text-color);
+    transition: background-color 0.5s ease;
+  
 }
 
 h1,
@@ -165,7 +167,7 @@ button {
 
   .pane-2 {
     position: fixed;
-    bottom: 40px;
+    bottom: 45px;
     left: 0;
     right: 0;
     width: 100%;
@@ -218,7 +220,7 @@ button {
   padding: 0 0 1px 0;
   font-size: 20px;
   border-radius: 50%;
-  
+
   background-color: var(--background-color);
   color: var(--text-color);
 
@@ -271,58 +273,61 @@ button {
 }
 
 .title-row {
-    background-color: crimson;
-    width: 100%;
-    text-align: right;
-    height: 45px;
-    position: fixed;
-    bottom: 0px;
+  background-color: crimson;
+  width: 100%;
+  text-align: right;
+  height: 45px;
+  position: fixed;
+  bottom: 0px;
 
 }
 
 #menuBtn {
-    font-size: 20px;
-    border: none;
-    position: fixed;
-    bottom: 13px;
-    left: 21px;
-    background-color: crimson;
+  font-size: 20px;
+  border: none;
+  position: fixed;
+  bottom: 13px;
+  left: 21px;
+  background-color: crimson;
 }
 
 #menuBtn:hover {
-    transform: rotate(20deg) scale(1.2);
+  transform: rotate(20deg) scale(1.2);
 }
 
 #darkModeBtn {
-    font-size: 20px;
-    border: none;
-    position: fixed;
-    bottom: 13px;
-    right: 21px;
-    background-color: crimson;
+  font-size: 20px;
+  border: none;
+  position: fixed;
+  bottom: 13px;
+  right: 21px;
+  background-color: crimson;
 }
+
 #darkModeBtn:hover {
-    transform: rotate(20deg) scale(1.2);
+  transform: rotate(20deg) scale(1.2);
 }
+
 .title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    letter-spacing: 5px;
-    color: lightgoldenrodyellow;
-    text-align: center;
-font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: lightgoldenrodyellow;
+  text-align: center;
+  font-weight: bold;
 }
 
 .version {
-    font-size: 16px;
-    color: black;
-    letter-spacing: 0px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: crimson;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 0px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: crimson;
 }
 
 .version:hover {
-    color: lightgoldenrodyellow;
+  color: lightgoldenrodyellow;
 }
+

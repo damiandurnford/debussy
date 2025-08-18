@@ -1,10 +1,9 @@
 /* Piano.css */
 
 .piano-container {
-    display: flex;
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
-
 
 .in-piano {
   clear: both;
@@ -13,6 +12,13 @@
   height: 82px;
   flex-wrap: nowrap;
 
+}
+
+@media (max-width: 600px) {
+  .in-piano {
+    width: 95vw; /* This makes the piano div 95% of the viewport width */
+    height: auto; /* This allows the height to adjust accordingly */
+  }
 }
 
 .key {
@@ -67,14 +73,14 @@
 
 .greenOn {
   background-color: green;
-  padding: 0 0 3px 0 ;
-font-weight: bold;
+  padding: 0 0 3px 0;
+  font-weight: bold;
 }
 
 /* In-Piano.css */
 
 .w3switch {
-text-align: center;
+  text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
   margin-top: 3px;
@@ -102,7 +108,10 @@ text-align: center;
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #666;
   transition: 0.4s;
   border-radius: 34px;
@@ -111,21 +120,23 @@ text-align: center;
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px; width: 20px;
-  left: 4px; bottom: 4px;
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: teal;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px teal;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
