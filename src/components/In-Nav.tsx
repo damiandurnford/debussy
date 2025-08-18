@@ -5,22 +5,22 @@ interface InNavProps {
   onTogglePiano: () => void;
   onToggleGuitar: () => void;
   onToggleStave: () => void;
-  onToggleLlama: () => void;
+  // onToggleLlama: () => void;
   showPiano: boolean;
   showGuitar: boolean;
   showStave: boolean;
-  showLlama: boolean;
+  // showLlama: boolean;
 }
 
 const InNav: React.FC<InNavProps> = ({
   onTogglePiano,
   onToggleGuitar,
   onToggleStave,
-  onToggleLlama,
+  // onToggleLlama,
   showPiano,
   showGuitar,
   showStave,
-  showLlama,
+  // showLlama,
   
 }) => {
   return (
@@ -48,12 +48,12 @@ const InNav: React.FC<InNavProps> = ({
         🎼
       </button>
 
-      <button
+      {/* <button
         onClick={onToggleLlama}
         className={showLlama ? "selected" : ""}
       >
         🦙
-      </button>
+      </button> */}
 
     </div>
   );

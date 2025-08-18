@@ -3,7 +3,7 @@ backend:
         - entry: index.js
           handler: handler
           name: function-express
-          path: ./dist
+          path: .
           type: httpServer
     language:
         name: js
@@ -17,5 +17,5 @@ backend:
             - npm install
             - npm run build
 name: debussy
-region: us-east-1
+region: eu-west-1
 yamlVersion: 2

@@ -11,9 +11,7 @@ interface ChordsObject {
   [key: string]: any[];
 }
 
-function normalizeChordName(chord: string): string {
-  return chord.replace('Maj7', 'maj7');
-}
+
 
 const chordShapes: Record<string, any> = {};
 
@@ -100,7 +98,7 @@ const midiToNote = (midi: number): string => {
 };
 
 const InGuitar: React.FC<InGuitarProps> = ({ guitarChordName }) => {
-const [showNotes, setShowNotes] = useState(true);
+const [showNotes] = useState(true);
 const chords = guitarChords.chords as ChordsObject;
 
 const chordKeyMap: Record<string, string> = {

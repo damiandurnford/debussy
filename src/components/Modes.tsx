@@ -138,31 +138,31 @@ const getRomanNumeral = (index: number, mode: string, showSevenths: boolean): st
   // Index is 0-based scale degree.
 
   // Base roman numerals without sevenths
-  const baseNumerals = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii'];
+  // const baseNumerals = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii'];
 
   // Adjustments per mode and degree for sevenths
   // We define a mapping for each mode of the numeral to use per degree with sevenths
 
   // For Ionian
-  const ionianSevenths = ['Imaj7', 'iim7', 'iiim7', 'IVmaj7', 'V7', 'vim7', 'viim7b5'];
+  // const ionianSevenths = ['Imaj7', 'iim7', 'iiim7', 'IVmaj7', 'V7', 'vim7', 'viim7b5'];
 
   // For Dorian
-  const dorianSevenths = ['im7', 'iim7', 'IIImaj7', 'V7', 'vim7', 'viim7b5', 'VIImaj7'];
+  // const dorianSevenths = ['im7', 'iim7', 'IIImaj7', 'V7', 'vim7', 'viim7b5', 'VIImaj7'];
 
   // For Phrygian
-  const phrygianSevenths = ['im7', 'IImaj7', 'V7', 'vim7', 'viim7b5', 'IImaj7', 'V7'];
+  // const phrygianSevenths = ['im7', 'IImaj7', 'V7', 'vim7', 'viim7b5', 'IImaj7', 'V7'];
 
   // For Lydian
-  const lydianSevenths = ['Imaj7', 'V7', 'vim7b5', 'iiim7', 'IVmaj7', 'v7', 'vim7'];
+  // const lydianSevenths = ['Imaj7', 'V7', 'vim7b5', 'iiim7', 'IVmaj7', 'v7', 'vim7'];
 
   // For Mixolydian
-  const mixolydianSevenths = ['V7', 'iim7', 'vim7b5', 'IVmaj7', 'IIm7', 'v7', 'IVmaj7'];
+  // const mixolydianSevenths = ['V7', 'iim7', 'vim7b5', 'IVmaj7', 'IIm7', 'v7', 'IVmaj7'];
 
   // For Aeolian
-  const aeolianSevenths = ['im7', 'vim7b5', 'IIImaj7', 'iv7', 'v7', 'VImaj7', 'VII7'];
+  // const aeolianSevenths = ['im7', 'vim7b5', 'IIImaj7', 'iv7', 'v7', 'VImaj7', 'VII7'];
 
   // For Locrian
-  const locrianSevenths = ['vim7b5', 'IImaj7', 'iv7', 'v7', 'VImaj7', 'VII7', 'im7'];
+  // const locrianSevenths = ['vim7b5', 'IImaj7', 'iv7', 'v7', 'VImaj7', 'VII7', 'im7'];
 
   // Because the above arrays don't align perfectly with scale degrees, and some modes have flats,
   // We'll instead hardcode the Roman numerals for the scale degrees used in the JSX:

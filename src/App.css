@@ -69,6 +69,7 @@ button {
 .App {
   text-align: center;
   position: relative;
+  margin-top: 10px;
 }
 
 /* Title and Subtitle */

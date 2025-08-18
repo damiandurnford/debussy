@@ -242,12 +242,7 @@ export default function CoF({ onChordSelect }: CoFProps) {
                       return chromatic[(index + steps) % 12];
                     };
 
-                    const romanTargets = ['ii', 'iii', 'IV', 'V', 'vi'];
-                    const chordMap: Record<string, string> = {
-                      C: 'C', G: 'G', D: 'D', A: 'A', E: 'E', B: 'B', F: 'F', 'F#': 'F#', Db: 'Db', Ab: 'Ab', Eb: 'Eb', Bb: 'Bb',
-                      Am: 'Am', Em: 'Em', Bm: 'Bm', 'F#m': 'F#m', 'C#m': 'C#m', 'G#m': 'G#m', 'D#m': 'D#m',
-                      Bbm: 'Bbm', Fm: 'Fm', Cm: 'Cm', Gm: 'Gm', Dm: 'Dm',
-                    };
+
 
                     const relativeChords = {
                       C: ['Dm', 'Em', 'F', 'G', 'Am'],

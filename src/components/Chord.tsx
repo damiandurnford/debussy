@@ -4,7 +4,7 @@ import InNav from './In-Nav.tsx';
 import InPiano from './In-Piano.tsx';
 import InGuitar from './In-Guitar.tsx';
 import InStave from './In-Stave.tsx';
-import InLlama from './In-Llama.tsx';
+// import InLlama from './In-Llama.tsx';
 import Inversion from './Inversion.tsx';
 
 interface ChordProps {
@@ -246,11 +246,11 @@ const Chord: React.FC<ChordProps> = ({ chord }) => {
         <InStave activeNotes={invertedNotes} />
       </> 
       )}  
-      {showLlama && !showPiano && !showGuitar && !showStave && 
+      {/* {showLlama && !showPiano && !showGuitar && !showStave && 
       <InLlama 
         chordName={chord}
         notes={coreNotes}
-      />}
+      />} */}
 
     </div>
   );
