@@ -73,7 +73,7 @@ function App() {
         </div>
 
   <div className="title-row">
-    <div className="title">De♭ussy <button className="version">(v0.93)</button></div>
+    <div className="title">De♭ussy <button className="version">(v0.94)</button></div>
    <button id="menuBtn">🎶</button>
     <button id="darkModeBtn">🌙</button>
   </div>

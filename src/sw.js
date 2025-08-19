@@ -1,4 +1,4 @@
-const CACHE_NAME = 'debussy-cache-v0.93';
+const CACHE_NAME = 'debussy-cache-v0.94';
 const URLS_TO_CACHE = ['/', '/index.html', '/manifest.json'];
 
 self.addEventListener('install', (event) => {
